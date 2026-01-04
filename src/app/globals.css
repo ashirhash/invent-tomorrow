@@ -119,6 +119,9 @@
 }
 
 @layer base {
+  body {
+    scroll-behavior: smooth;
+  }
 
   button:not(:disabled),
   [role="button"]:not(:disabled) {
@@ -126,23 +129,15 @@
   }
 
   .container-sm {
-    @apply max-w-[1320px] md:px-10 px-5 mx-auto;
+    @apply max-w-330 md:px-10 px-5 mx-auto;
   }
 
   .container {
-    @apply max-w-[1720px] md:px-10 px-5 mx-auto;
+    @apply max-w-330 md:px-10 px-5 mx-auto;
   }
 
   .bg-dashed {
     background-color: black;
     background-image: url("data:image/svg+xml,%3Csvg%20width='100%25'%20height='100%25'%20xmlns='http://www.w3.org/2000/svg'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='transparent'%20stroke='%23333'%20stroke-width='4'%20stroke-dasharray='6'%20stroke-linecap='butt'/%3E%3C/svg%3E");
-    
-    
-
-
-
-
-
-
   }
 }
