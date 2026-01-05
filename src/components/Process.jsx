@@ -19,7 +19,7 @@ const Process = ({ processes = [] }) => {
             <div className="absolute h-px w-4/5 mx-auto top-12 left-0 right-0 z-0 bg-dashed"></div>
             {/* Cards */}
             {processes.map((process) => (
-              <ProcessCard key={process.key} {...process} />
+              <ProcessCard {...process} key={process.key} />
             ))}
           </div>
         </div>
