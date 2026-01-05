@@ -14,29 +14,35 @@ const VideoPlayer = () => {
                 <div className="relative">
                     {!isPlaying ? (
                         // Thumbnail with play button
-                        <div
-                            className="relative cursor-pointer rounded-xl w-full aspect-video p-1"
-                            onClick={() => setIsPlaying(true)}
-                        >
-                            {/* Glow border layer */}
-                            <div className="absolute -inset-1 rounded-xl bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.25)_40%,transparent_45%),linear-gradient(#3B82F6,#00F2FF)] blur-sm opacity-20 z-0"></div>
+                        <>
+                            <div
+                                className="relative cursor-pointer rounded-xl w-full aspect-video p-1"
+                                onClick={() => setIsPlaying(true)}
+                            >
+                                {/* Glow border layer */}
+                                <div className="absolute -inset-1 rounded-xl bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.25)_40%,transparent_45%),linear-gradient(#3B82F6,#00F2FF)] blur-sm opacity-20 z-0"></div>
 
-                            {/* Main border and content */}
-                            <div className="relative rounded-xl overflow-hidden border-2 border-gray-700 w-full h-full z-10">
-                                <img
-                                    src={thumbnail}
-                                    alt="Video Thumbnail"
-                                    className="w-full h-full object-cover"
-                                />
+                                {/* Main border and content */}
+                                <div className="relative rounded-xl overflow-hidden border-2 border-gray-700 w-full h-full z-10">
+                                    <img
+                                        src={thumbnail}
+                                        alt="Video Thumbnail"
+                                        className="w-full h-full object-cover"
+                                    />
 
-                                {/* Play button overlay */}
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                    <div className="bg-white bg-opacity-50 rounded-full p-6">
-                                        <Image src='/images/play.svg' width={32} height={32} alt="player" />
+                                    {/* Play button overlay */}
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <div className="bg-white bg-opacity-50 rounded-full p-6">
+                                            <Image src='/images/play.svg' width={32} height={32} alt="player" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            {/* Label at bottom-left */}
+                            <span className="absolute bottom-3 left-3 z-10 bg-black bg-opacity-50 text-white px-3 py-1 border border-[#FFFFFF1A] rounded-full tracking-wider text-[10px] flex items-center gap-2">
+                                <span className="w-2 h-2 rounded-full bg-accent-blue text-accent-gray font-bold"></span> THE SCALE BLUEPRINT
+                            </span>
+                        </>
 
                     ) : (
                         // YouTube iframe only after click
@@ -50,10 +56,6 @@ const VideoPlayer = () => {
                         ></iframe>
                     )}
 
-                    {/* Label at bottom-left */}
-                    <span className="absolute bottom-2 left-2 bg-black bg-opacity-50 text-white px-3 py-1 border border-[#FFFFFF1A] rounded-full tracking-wider text-[10px] flex items-center gap-2">
-                        <span className="w-2 h-2 rounded-full bg-accent-blue text-accent-gray font-bold"></span> THE SCALE BLUEPRINT
-                    </span>
                 </div>
 
                 {/* Description and duration */}
