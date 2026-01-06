@@ -1,5 +1,5 @@
-import Image from "next/image";
 import React from "react";
+import Calender from "./icons/Calender";
 
 const CTA = () => {
   return (
@@ -11,16 +11,13 @@ const CTA = () => {
         </h2>
         <button
           type="button"
-          className="capitalize mx-auto text-center flex gap-3 items-center py-5 px-10 bg-white rounded-full transition hover:brightness-75 text-lg text-black font-bold"
+          className="capitalize mx-auto text-center flex gap-3 items-center py-5 px-10 bg-white rounded-full transition text-lg text-black font-bold hover:text-white hover:bg-accent-blue duration-300"
         >
           Book a Free Workflow Audit Now{" "}
-          <Image
-            src="/images/calender.svg"
-            className="w-5 h-5"
+          <Calender
             width={20}
             height={20}
-            alt="next arrow"
-          />
+            alt="next arrow" />
         </button>
       </div>
     </section>

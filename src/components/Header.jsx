@@ -6,13 +6,15 @@ const Header = () => {
     return (
         <header>
             <div className="container-sm flex py-6 items-center justify-between">
-                <a href="/" className=""><Image src='/images/logo.svg' width={247} height={40} alt='logo' /></a>
+                <a href="/" className=""><Image className='sm:w-[247ox]' src='/images/logo.svg' width={247} height={40} alt='logo' /></a>
                 <Navbar />
-                <button type='button' className="group px-6 border text-white border-[#FFFFFF1A] bg-[#FFFFFF08] rounded-full text-sm font-bold transition hover:bg-accent-blue">
-                    <span className="block border-b border-b-accent-blue py-4.5 leading-0 transition-colors group-hover:border-b-white">
+                <button className="relative overflow-hidden group px-6 border text-white border-[#FFFFFF1A] bg-transparent rounded-full text-sm font-bold transition">
+                    <span className="relative z-10 block py-4.5 leading-0 transition-colors">
                         Book Free Audit
                     </span>
+                    <span className="absolute bottom-0 left-0 w-full h-px bg-accent-blue transition-all duration-500 ease-none group-hover:h-full"></span>
                 </button>
+
             </div>
         </header>
     )

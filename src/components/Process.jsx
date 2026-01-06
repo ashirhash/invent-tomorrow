@@ -1,6 +1,5 @@
-import Image from "next/image";
-import { Button } from "./ui/button";
 import ProcessCard from "./ui/ProcessCard";
+import Arrow from "./icons/Arrow";
 
 const Process = ({ processes = [] }) => {
   return (
@@ -24,15 +23,9 @@ const Process = ({ processes = [] }) => {
           </div>
         </div>
         <div className="flex items-center flex-col gap-8 max-w-137 mx-auto">
-          <button type="button" className="capitalize flex gap-3 items-center py-5 px-10 bg-white rounded-full transition hover:brightness-75 text-lg text-black font-bold">
+          <button type="button" className="capitalize flex gap-3 items-center py-5 px-10 bg-white rounded-full duration-300 text-lg text-black font-bold hover:text-white hover:bg-accent-blue">
             Let's automate your business{" "}
-            <Image
-              src="/images/arrow-black.svg"
-              className="w-5 h-5"
-              width={20}
-              height={20}
-              alt="next arrow"
-            />
+            <Arrow />
           </button>
           <p className="text-accent-gray font-medium text-center">
             See how much time we can save your team and start focusing on growth

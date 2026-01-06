@@ -24,7 +24,7 @@ const PeopleCard = ({
       <p className="text-accent-gray font-bold mb-2">{designation}</p>
       <Link
         href={inUrl}
-        className="w-10 h-10 block border border-[#FFFFFF1A] bg-[#FFFFFF08 rounded-full p-3"
+        className="w-10 h-10 block hover:border-accent-blue hover:bg-accent-blue/20 transition duration-300 border border-[#FFFFFF1A] bg-[#FFFFFF08] rounded-full p-3"
       >
         <Image
           className="w-full h-full"

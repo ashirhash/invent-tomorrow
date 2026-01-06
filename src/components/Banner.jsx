@@ -19,7 +19,7 @@ const Banner = () => {
                             remove manual work, reduce tool chaos, and help
                             your team scale efficiently.</p>
                         <Link href='/' className='group col-span-4 flex gap-4 items-center'>
-                            <span className=' justify-center items-center grow w-16 h-16 border rounded-full border-[#4B5563] flex gap-4'>
+                            <span className=' justify-center items-center grow w-16 h-16 border rounded-full border-[#4B5563] flex gap-4 hover:bg-accent-blue transition-all duration-300'>
                                 <Image className='group-hover:-rotate-45 transition' src='/images/next-arrow.svg' width={24} height={24} alt='arrow icon'></Image>
                             </span>
                             <span className='uppercase text-white text-sm tracking-wider'>Explore Solutions</span>

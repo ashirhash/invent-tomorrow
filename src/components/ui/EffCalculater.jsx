@@ -25,7 +25,7 @@ export default function EffCalculator() {
           onChange={(e) => setTeamMembers(Number(e.target.value))}
           className="w-full h-1 rounded-lg appearance-none cursor-pointer
                      bg-[rgba(255,255,255,0.1)]
-                     accent-accent-blue"
+                     accent-accent-blue [&::-webkit-slider-thumb]:bg-accent-blue [&::-moz-range-thumb]:bg-accent-blue"
         />
       </div>
 
@@ -43,7 +43,7 @@ export default function EffCalculator() {
           onChange={(e) => setManualHours(Number(e.target.value))}
           className="w-full h-1 rounded-lg appearance-none cursor-pointer
                      bg-[rgba(255,255,255,0.1)]
-                     accent-accent-blue"
+                     accent-accent-blue [&::-webkit-slider-thumb]:bg-accent-blue [&::-moz-range-thumb]:bg-accent-blue"
         />
       </div>
 

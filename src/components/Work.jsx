@@ -1,12 +1,13 @@
 import React from 'react'
 import WorkCard from './ui/WorkCard'
+import FerrisWheel from './ui/FerrisWheel'
 
 const Work = ({ services = [] }) => {
     return (
         <section className='lg:pb-40 sm:pb-20 pb-10'>
             <div className="container grid grid-cols-14 gap-20">
                 <div className="col-span-8 mt-20">
-                    <video className='w-full' autoPlay loop muted src='/videos/work.mp4' />
+                    <FerrisWheel />
                 </div>
                 <div className="col-span-6">
                     <h2 className='text-white text-6xl mb-8 font-extrabold leading-[1.15] '>Optimize Team <span className='text-accent-blue '>Workflows</span></h2>

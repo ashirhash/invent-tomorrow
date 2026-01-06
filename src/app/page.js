@@ -107,7 +107,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      {/* <main>
         <Banner />
         <Work services={services} />
         <Process processes={processes} />
@@ -116,7 +116,7 @@ export default function Home() {
         <CTA />
         <People people={people} />
       </main>
-      <Footer />
+      <Footer /> */}
     </>
   );
 }

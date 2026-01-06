@@ -22,7 +22,7 @@ const Footer = () => {
             </p>
             <Link
               href="https://www.linkedin.com/"
-              className="w-10 h-10 block border border-[#FFFFFF1A] bg-[#FFFFFF08 rounded-full p-3"
+              className="w-10 h-10 block border hover:border-accent-blue hover:bg-accent-blue/20 transition duration-300 border-[#FFFFFF1A] bg-[#FFFFFF08 rounded-full p-3"
             >
               <Image
                 className="w-full h-full"
@@ -41,11 +41,11 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="your@email.com"
-                className="w-full font-bold text-sm placeholder:text-accent-gray bg-[#FFFFFF08] p-4 rounded-xl mb-3 border border-[#FFFFFF1A]"
+                className="w-full font-bold text-sm placeholder:text-accent-gray/60 text-accent-gray bg-[#FFFFFF08] p-4 rounded-xl mb-3 border border-[#FFFFFF1A]"
               />
               <button
                 type="submit"
-                className="bg-white p-3 w-full rounded-xl font-black text-sm"
+                className="bg-white p-3 w-full rounded-xl font-black text-sm transition hover:bg-accent-blue hover:text-white"
               >
                 Subscribe
               </button>
