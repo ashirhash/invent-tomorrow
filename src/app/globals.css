@@ -166,11 +166,11 @@
   }
 
   .container-sm {
-    @apply max-w-330 md:px-10 px-5 mx-auto;
+    @apply max-w-330 md:px-8 px-4 mx-auto;
   }
 
-  .container {
-    @apply max-w-330 md:px-10 px-5 mx-auto;
+  .container-lg {
+    @apply max-w-350 md:px-8 px-4 mx-auto;
   }
 
   .bg-dashed {
@@ -179,7 +179,6 @@
   }
 
   .rotating-icon-position {
-    left: calc(50% - 55px);
-    top: calc(50% - 55px);
+    
   }
 }

@@ -48,21 +48,21 @@ export default function WhyUs({ whys = [] }) {
   };
 
   return (
-    <section className="relative lg:pb-20 pb-10">
+    <section className="relative xl:pb-20 max-md:pb-20">
       <div className="container-sm md:flex md:justify-between md:gap-8">
-        <div className="hidden md:block md:w-[40%]">
-          <div className="sticky top-0 h-screen flex flex-col justify-center space-y-4">
+        <div className=" xl:w-[40%] lg:w-[45%] ">
+          <div className="md:sticky md:top-0 md:h-screen flex flex-col justify-center space-y-4">
             <h2 className="mb-3 text-accent-blue font-black uppercase text-xs tracking-[5px]">
               Why Choose Us
             </h2>
-            <h1 className="text-6xl font-bold capitalize text-white mb-12">
+            <h2 className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl font-bold capitalize text-white lg:mb-12 mb-8">
               What sets us <span className="text-accent-blue">Apart</span>
-            </h1>
-            {whys.map((item, i) => (
+            </h2>
+            {isDesktop && whys.map((item, i) => (
               <button
                 key={item.title}
                 onClick={() => scrollToSection(i)}
-                className={`text-left font-bold text-4xl transition-colors mb-8 ${
+                className={`text-left font-bold xl:text-4xl lg:text-3xl text-2xl transition-colors xl:mb-8 lg:mb-6 mb-4 ${
                   activeIndex === i
                     ? "text-white"
                     : "text-gray-400"

@@ -10,7 +10,7 @@ export default function EffCalculator() {
   const price = teamMembers * manualHours * 10;
 
   return (
-    <div className="space-y-10">
+    <div className="lg:space-y-10 md:space-y-8 space-y-6">
       {/* Team Members Slider */}
       <div>
         <label className="mb-2 flex justify-between font-bold text-[#D1D5DB] text-sm">
@@ -50,12 +50,12 @@ export default function EffCalculator() {
       <span className="block border border-[#FFFFFF1A]"></span>
 
       {/* Price Display */}
-      <div className="text-center mt-6 text-xl font-bold flex items-center justify-between rounded-2xl px-6 py-5 bg-[#00000066]">
+      <div className="text-center mt-6 text-xl font-bold flex items-center justify-between rounded-2xl lg:px-6 lg:py-5 px-5 py-4 bg-[#00000066]">
         <div className="">
             <span className="font-extrabold text-[#6B7280] mb-1 text-xs">Potential Annual Savings</span>
-            <h4 className="text-white font-extrabold text-4xl text-start">${price.toLocaleString()}</h4>
+            <h4 className="text-white font-extrabold lg:text-4xl text-3xl text-start">${price.toLocaleString()}</h4>
         </div>
-        <Image alt="stocks icon" width={48} height={48} src="/images/stocks-bg.svg"/>
+        <Image alt="stocks icon" className="lg:w-12 w-10 lg:h-12 h-10" width={48} height={48} src="/images/stocks-bg.svg"/>
       </div>
     </div>
   );

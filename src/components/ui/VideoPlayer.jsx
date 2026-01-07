@@ -9,8 +9,8 @@ const VideoPlayer = () => {
     const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 
     return (
-        <div className="max-w-2xl mx-auto group sm:perspective-midrange">
-            <div className={`relative rounded-xl transition-transform duration-300 sm:transform-style-preserve-3d sm:group-hover:rotate-y-0 ${!isPlaying ? "sm:-rotate-y-10" : ""}`}>
+        <div className="max-w-xl ml-auto group sm:perspective-midrange">
+            <div className={`relative rounded-xl transition-transform duration-300 sm:transform-style-preserve-3d   ${!isPlaying ? "lg:-rotate-y-10 lg:group-hover:scale-110 lg:group-hover:rotate-y-0" : ""}`}>
                 {/* Glow border layer */}
                 <div className="absolute -inset-1 rounded-2xl transition-bg duration-300 group-hover:-inset-3 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.25)_40%,transparent_45%),linear-gradient(#3B82F6,#00F2FF)] blur-sm opacity-20 -z-1"></div>
                 {!isPlaying ? (
@@ -31,7 +31,7 @@ const VideoPlayer = () => {
                                 />
 
                                 {/* Play button overlay */}
-                                <div className="absolute inset-0 flex items-center justify-center">
+                                <div className="absolute inset-0 flex items-center justify-center sm:group-hover:scale-105 transition-transform duration-300">
                                     <div className="bg-white bg-opacity-50 rounded-full p-6">
                                         <Image src='/images/play.svg' width={32} height={32} alt="player" />
                                     </div>
@@ -60,9 +60,9 @@ const VideoPlayer = () => {
             </div>
 
             {/* Description and duration */}
-            <div className="mt-6 flex justify-end gap-10 px-2">
-                <span className="text-[#6B7280] font-bold text-sm">Short Description of VSL.</span>
-                <span className="text-accent-blue font-bold text-sm">[ 02:45 ]</span>
+            <div className="sm:mt-6 mt-4 flex justify-end sm:gap-10 gap-6 px-2">
+                <span className="text-[#6B7280] font-bold sm:text-sm text-xs">Short Description of VSL.</span>
+                <span className="text-accent-blue font-bold sm:text-sm text-xs">[ 02:45 ]</span>
             </div>
         </div>
     );

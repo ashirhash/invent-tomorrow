@@ -5,10 +5,10 @@ import Navbar from './ui/Navbar'
 const Header = () => {
     return (
         <header>
-            <div className="container-sm flex py-6 items-center justify-between">
-                <a href="/" className=""><Image className='sm:w-[247ox]' src='/images/logo.svg' width={247} height={40} alt='logo' /></a>
+            <div className="container-sm flex sm:py-6 py-3 items-center justify-between">
+                <a href="/" className=""><Image className='xl:w-[247px] w-[200px]' src='/images/logo.svg' width={247} height={40} alt='logo' /></a>
                 <Navbar />
-                <button className="relative overflow-hidden group px-6 border text-white border-[#FFFFFF1A] bg-transparent rounded-full text-sm font-bold transition">
+                <button className="relative max-lg:hidden overflow-hidden group px-6 border text-white border-[#FFFFFF1A] bg-transparent rounded-full text-sm font-bold transition">
                     <span className="relative z-10 block py-4.5 leading-0 transition-colors">
                         Book Free Audit
                     </span>

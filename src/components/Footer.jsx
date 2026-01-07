@@ -4,19 +4,20 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="lg:pb-16 sm:pb-10 pb-8">
-      <div className="container">
-        <div className="flex justify-between mb-24">
-          <div className="space-y-6 w-[28%]">
+    <footer className="lg:pb-16 sm:pb-10 py-8">
+      <div className="container-lg">
+        <div className="flex max-md:flex-col max-sm:gap-8 justify-between sm:mb-24 mb-16">
+          <div className="sm:space-y-6 space-y-4 lg:w-[28%] md:w-1/2 w-full max-w-100">
             <a href="/" className="block">
               <Image
                 src="/images/logo.svg"
                 width={247}
                 height={40}
+                className="max-sm:w-50"
                 alt="logo"
               />
             </a>
-            <p className="font-bold text-sm text-[#6B7280] ">
+            <p className="font-bold sm:text-sm text-xs text-[#6B7280] ">
               Engineering efficiency for the world's most ambitious companies
               through custom AI and automation systems.
             </p>
@@ -33,8 +34,8 @@ const Footer = () => {
               />
             </Link>
           </div>
-          <div className="w-1/3">
-            <h3 className="uppercase mb-6 text-white font-extrabold tracking-widest">
+          <div className="md:w-1/3 w-full">
+            <h3 className="uppercase max-sm:text-sm sm:mb-6 mb-4 text-white font-extrabold tracking-widest">
               JOIN A NEWSLETTER
             </h3>
             <form className="mb-3">
@@ -55,9 +56,9 @@ const Footer = () => {
             </span>
           </div>
         </div>
-        <div className="flex items-center justify-between   ">
+        <div className="flex max-sm:flex-col max-sm:items-center max-sm:gap-3 items-center justify-between   ">
             <span className="text-xs font-bold text-[#4B5563]">© 2024 Invent Tomorrow Agency. All rights reserved.</span>
-            <ul className="flex gap-8 items-center">
+            <ul className="flex gap-4 items-center">
                 <li><Link href="/" className="text-xs text-[#4B5563] font-bold uppercase">privacy policy</Link></li>
                 <li><Link href="/" className="text-xs text-[#4B5563] font-bold uppercase">terms of service</Link></li>
             </ul>
