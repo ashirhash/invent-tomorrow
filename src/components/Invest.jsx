@@ -9,7 +9,7 @@ const Invest = () => {
           <h2 className="mb-3 text-accent-blue font-black uppercase text-xs tracking-[5px]">
             Why Choose Us
           </h2>
-          <h2 className="xl:text-6xl lg:text-5xl text-4xl font-bold capitalize text-white mb-4">
+          <h2 className="xl:text-6xl lg:text-5xl sm:text-4xl text-3xl font-bold capitalize text-white mb-4">
             Your Investment,{" "}
             <span className="text-accent-blue">Quantified</span>
           </h2>
@@ -19,13 +19,13 @@ const Invest = () => {
           </p>
           <div className="flex max-lg:flex-col justify-between gap-5">
             <div>
-              <h3 className="lg:text-3xl text-2xl lg:mb-1 text-white font-extrabold">520+</h3>
+              <h3 className="lg:text-3xl sm:text-2xl text-xl lg:mb-1 text-white font-extrabold">520+</h3>
               <span className="text-[#6B7280] text-xs uppercase font-bold tracking-widest">
                 hours saved / mo
               </span>
             </div>
             <div>
-              <h3 className="lg:text-3xl text-2xl lg:mb-1 text-accent-blue font-extrabold">
+              <h3 className="lg:text-3xl sm:text-2xl text-xl lg:mb-1 text-accent-blue font-extrabold">
                 800%
               </h3>
               <span className="text-[#6B7280] text-xs uppercase font-bold tracking-widest">

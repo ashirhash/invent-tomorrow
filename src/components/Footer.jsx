@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="lg:pb-16 sm:pb-10 py-8">
       <div className="container-lg">
-        <div className="flex max-md:flex-col max-sm:gap-8 justify-between sm:mb-24 mb-16">
+        <div className="flex max-md:flex-col max-sm:gap-8 justify-between sm:mb-24 mb-14">
           <div className="sm:space-y-6 space-y-4 lg:w-[28%] md:w-1/2 w-full max-w-100">
             <a href="/" className="block">
               <Image
