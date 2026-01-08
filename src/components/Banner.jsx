@@ -2,10 +2,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import VideoPlayer from './ui/VideoPlayer'
+import ThreeBackground from './ThreeBG'
 
 const Banner = () => {
     return (
-        <section className='lg:py-40 sm:py-20 max-sm:pb-20 max-sm:pt-8 flex'>
+        <section className='lg:pt-40 lg:mb-20 relative sm:pt-30 sm:mb-20 sm:pb-20 max-sm:pb-10 max-sm:mb-10 max-sm:pt-20 flex'>
+            <ThreeBackground />
             <div className="container-sm sm:gap-12 gap-6 grid lg:grid-cols-10 grid-cols-1 ">
                 <div className="lg:col-span-6 self-center">
                     <div className="sm:mb-12 mb-5">

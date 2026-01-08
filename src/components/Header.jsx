@@ -4,7 +4,7 @@ import Navbar from './ui/Navbar'
 
 const Header = () => {
     return (
-        <header>
+        <header className='absolute top-0 left-0 right-0 mx-auto w-full z-10'>
             <div className="container-sm flex sm:py-6 py-3 items-center justify-between">
                 <a href="/" className=""><Image className='xl:w-[247px] w-[200px]' src='/images/logo.svg' width={247} height={40} alt='logo' /></a>
                 <Navbar />
